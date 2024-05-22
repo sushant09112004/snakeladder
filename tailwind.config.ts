@@ -14,7 +14,26 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors: {
+      midnight: "#121063",
+      primary: "#3A0CA3",
+      secondary: "#4361EE",
+      tertiary: "#4CC9F0",
+      rose: "#F72585",
+      grape: "#7209B7",
+      white: "#ffffff",
+      player1color: "#FF0000",
+      player2color: "#fffe00",
+      player3color: "#E072A4",
+      player4color: "#3D3B8E",
+    },
   },
-  plugins: [],
+  safelist: [
+    "bg-player1color",
+    "bg-player2color",
+    "bg-player3color",
+    "bg-player4color",
+  ],
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;

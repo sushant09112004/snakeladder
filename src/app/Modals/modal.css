@@ -1,0 +1,20 @@
+.win-modal {
+  background-color: white;
+  background: url("../../../public/assets/win-bg.jpg"),
+    linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  /* background: url("../../../public/assets/win-bg.jpg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.win-modal div:first-child {
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
