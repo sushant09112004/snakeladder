@@ -6,6 +6,7 @@
   /* padding: 1rem 2rem; */
   /* min-height: 100vh; */
   background: #ffff;
+  background-image: src("../gateway2.jpg");
 }
 
 .board {
@@ -45,9 +46,15 @@
 .ladderBgImg {
   background: url("../../../public/assets/ladder-icon.png");
 }
-.ladderBgImg,
+.ladderBgImg{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  ;background-color: rgb(106, 153, 113);
+}
 .snakeBgImg {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  ;background-color: rgb(196, 128, 65);
 }

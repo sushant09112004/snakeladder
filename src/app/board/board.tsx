@@ -15,7 +15,7 @@ import dice3 from "$/public/assets/dice-faces/3.png";
 import dice4 from "$/public/assets/dice-faces/4.png";
 import dice5 from "$/public/assets/dice-faces/5.png";
 import dice6 from "$/public/assets/dice-faces/6.png";
-
+import BgImage from '@/assets/gateway2.jpg'
 import {
   createLinkedList,
   getArrayFromList,
@@ -54,10 +54,11 @@ function Board() {
   const [squaresRemaining, setSquaresRemaining] = useState(0);
 
   const [showWonPlayerModal, setShowWonPlayerModal] = useState(false);
+  
 
   return (
     <>
-      <main className="main w-screen h-screen p-1">
+      <main className="main w-screen h-screen p-1 ">
         <div className="flex h-full">
           <div className="w-1/4 flex flex-col p-1">
             <p className="bg-[#f2f2f2] w-full p-1 rounded">Players</p>
@@ -137,7 +138,15 @@ function Board() {
               </div>
             </div>
           </div>
-          <div className="w-3/4 flex flex-col items-center p-1">
+          
+          <div className="w-3/4 flex flex-col items-center p-1 "
+          style={{
+            background:
+              'linear-gradient(45deg, #F9A75B 0%, #EAEAEA 33.33%, #FFFFFF 66.67%, #A8E1A2 100%)',
+            boxShadow: '-10px 10px 15px rgba(0, 0, 0, 0.2)', // Custom shadow on bottom and left
+          }}
+         
+          >
             <div className="flex items-center justify-between px-2 mt-5 w-full">
               <p className="text-2xl font-semibold">Snakes & Ladders</p>
               {(players.length !== 0 || wonPlayers.length > 0) && (
