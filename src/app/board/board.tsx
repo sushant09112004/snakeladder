@@ -111,7 +111,7 @@ function Board() {
                 </div>
                 {players.length > 0 && (
                   <button
-                    className={`bg-secondary p-2 rounded text-white mt-2 ${
+                    className={`bg-secondary p-2 rounded text-black mt-2 ${
                       squaresRemaining !== 0 ? "bg-[#535353]" : ""
                     }`}
                     onClick={async () =>
